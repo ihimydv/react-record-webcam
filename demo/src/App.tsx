@@ -145,16 +145,6 @@ export function App() {
                   : 'hidden'
               }`}
             >
-              <p>Preview</p>
-              <video ref={recording.previewRef} autoPlay loop playsInline />
-              <div className="space-x-2 my-2">
-                <Button inverted onClick={() => download(recording.id)}>
-                  Download
-                </Button>
-                <Button inverted onClick={() => clearPreview(recording.id)}>
-                  Clear preview
-                </Button>
-              </div>
             </div>
           </div>
         ))}
